@@ -3,7 +3,7 @@ language = st.selectbox("Select language:", ["English", "Français"])
 
 def main():
     if language == "English":
-        st.title("Chapter 1: Arrival")
+        title = st.title("Chapter 1: Arrival")
         text = """
         The XZ-7 rover trundled across the rusty Martian landscape, its metal treads crunching against the iron-rich soil. Inside the rover's cramped control module, Dr. Lina Gupta monitored the data streaming across her displays, her dark eyes scanning the numbers and graphs with laser-like focus.
     
@@ -24,6 +24,7 @@ def main():
         "Hello."
         """
     else:
+        title = st.title("Chapitre 1: Atterrissage")
         text = """
         Le rover XZ-7 avançait lentement sur le paysage rougeâtre de Mars, ses chenilles métalliques crissant contre le sol riche en fer. À l'intérieur du module de contrôle exigu du rover, le Dr Lina Gupta surveillait les données qui défilaient sur ses écrans, ses yeux sombres scrutant les chiffres et les graphiques avec une concentration aiguë.
     
@@ -43,7 +44,7 @@ def main():
     
         "Bonjour."
         """
-    st.write(text)
+    st.write(title, text)
     
 if __name__ == "__main__":
     main()

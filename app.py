@@ -45,7 +45,7 @@ def main():
         "Bonjour."
         """
     st.title(title)
-    st.write(title, text)
+    st.write(text)
     
 if __name__ == "__main__":
     main()
